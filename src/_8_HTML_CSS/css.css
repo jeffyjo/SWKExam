@@ -1,0 +1,15 @@
+#one{
+    background-color: #00a0d2;
+}
+
+#two{
+    background-color: #00A700;
+}
+
+#three{
+    background-color: #7c1212;
+}
+
+#one, #two, #three{
+    height: 150px;
+}
