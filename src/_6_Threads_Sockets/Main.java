@@ -31,26 +31,42 @@ public class Main {
 
         System.out.println("number of threads: " + noOfThreads);
 
-        for (int i = 0; i < noOfThreads; i++) {
-            Thread t = new Thread();
+        for (int th = 0; th < noOfThreads; th++) {
+            Thread t = new Thread(() -> {
+
+                for (int i = 0; i < threads.size(); i++) {
+
+                    for (int j = (int) ((maxNumber / noOfThreads) * i); j < (int) (maxNumber / noOfThreads) * (i + 1); j++) {
+                        if (isPrime(j)) {
+                            System.out.println(j + " is prime");
+                            longCounter.increment();
+                        }
+                    }
+                }
+
+            });
             threads.add(t);
-        }
 
         //TODO: Finish this one - make logic
-        for (Thread t: threads) {
 
-            //for (int i = (int) (maxNumber / noOfThreads); i < ; i++) {}
-
-            t.start();
-            System.out.println("Starting thread: " + t.getName());
         }
+
+        for (Thread t: threads) {
+            System.out.println("Starting thread: " + t.getName());
+            t.start();
+        }
+
+        System.out.println(longCounter.get());
 
         for (Thread t: threads) {
             try {
                 t.join();
+                System.out.println(t.getName() + " has stopped");
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
+
+        System.out.println(longCounter.get());
     }
 }
