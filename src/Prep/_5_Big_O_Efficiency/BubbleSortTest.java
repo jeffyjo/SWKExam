@@ -3,7 +3,7 @@ package Prep._5_Big_O_Efficiency;
 /**
  * Created by jeffjorgensen on 30/12/2016.
  */
-public class BubbleSort {
+public class BubbleSortTest {
 
 
     public void bubbleSort(int[] array){

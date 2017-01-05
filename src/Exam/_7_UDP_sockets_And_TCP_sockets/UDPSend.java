@@ -1,6 +1,7 @@
 package Exam._7_UDP_sockets_And_TCP_sockets;
 
-import java.net.InetAddress;
+import java.io.IOException;
+import java.net.*;
 
 /**
  * Created by jeffjorgensen on 04/01/2017.
@@ -12,9 +13,10 @@ public class UDPSend {
         int sendPort = 5555;
         //InetAddress ip = InetAddress.getByName("localhost");
 
+        String msg = "Hi, this is the first message";
+
         //Initialize an unconnected DatagramSocket
 
-        String msg = "Hi, this is the first message";
 
         //transform String to byte-array
 

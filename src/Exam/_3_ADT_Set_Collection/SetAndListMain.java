@@ -1,5 +1,7 @@
 package Exam._3_ADT_Set_Collection;
 
+import java.util.*;
+
 /**
  * Created by jeffjorgensen on 04/01/2017.
  */
@@ -9,17 +11,10 @@ public class SetAndListMain {
         //Declare and initialize Set and List. Add elements.
 
 
-
-
         //Difference between storing data in set and list
 
 
-
-
         //try to add duplicates
-
-
-
 
 
         //treeSet sorts its data

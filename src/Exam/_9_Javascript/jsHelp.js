@@ -28,3 +28,11 @@ Car.prototype.carInfo = function(){
     return this.vehicle + " " + this.model + " " + this.hp + " " + this.wheels
 };
 
+$(document).ready(function () {
+
+    $.('#btn').onclick(function(){
+        //something
+
+    });
+
+});

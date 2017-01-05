@@ -6,6 +6,6 @@ package Exam._5_Big_O_Efficiency;
 public class LinearSearch {
 
     //Search for specific integer in array
-    //public  int linearSearch(int[] array, int key){}
+    //public int linearSearch(int[] array, int key){}
 
 }

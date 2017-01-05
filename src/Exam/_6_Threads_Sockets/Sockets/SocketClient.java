@@ -16,11 +16,11 @@ public class SocketClient {
         int port = 5555;
         //InetAddress ip = InetAddress.getByName("localhost");
 
+        String msg = "Hello from client";
+
         //Initialize new Socket with ip and port
 
         //create dataOutputStream
-
-        String msg = "Hello";
 
         //send message to server with stream
 

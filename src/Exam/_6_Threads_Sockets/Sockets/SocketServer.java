@@ -31,6 +31,9 @@ public class SocketServer {
         Thread t = new Thread(() -> {
             //Declare and initialize new SocketServer-object
             //call implemented function
+
+
+
         });
         t.start();
     }

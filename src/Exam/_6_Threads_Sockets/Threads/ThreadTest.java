@@ -9,15 +9,15 @@ public class ThreadTest extends Thread{
     PrintDemo printDemo;
 
     //constructor with name and pd
+    public ThreadTest( String name,  PrintDemo pd) {
+        threadName = name;
+        printDemo = pd;
+        System.out.println("thread " + threadName + " is created");
+    }
+
+    //Override methods and initialize thread with this and name. call start() from super-class
 
 
-    //Override methods and initialize t with this and name
-
-
-
-
-
-
-
-    ////make run() synchronized
+    //run calls method in PrintDemo
+    ////make run() synchronized with printDemo
 }

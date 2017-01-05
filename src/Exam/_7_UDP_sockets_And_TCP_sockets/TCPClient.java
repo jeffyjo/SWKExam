@@ -1,6 +1,10 @@
 package Exam._7_UDP_sockets_And_TCP_sockets;
 
+import java.io.DataOutputStream;
+import java.io.IOException;
 import java.net.InetAddress;
+import java.net.Socket;
+import java.net.UnknownHostException;
 
 /**
  * Created by jeffjorgensen on 04/01/2017.
@@ -12,13 +16,13 @@ public class TCPClient {
         int port = 5555;
         //InetAddress ip = InetAddress.getByName("localhost");
 
+        String msg = "Hello from TCP client";
+
         //Initialize Socket
 
         //Initialize DataOutputStream
 
-        String msg = "Hello from TCP Client";
-
-        //in loop - write msg
+        //in loop - write msg to server
 
     }
 }

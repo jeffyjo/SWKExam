@@ -5,4 +5,5 @@ package Exam._2_InterfaceAndGenerics;
  */
 public class NonGenericsWithInts {
     //create fields, constructor and methods for swopIt
+
 }

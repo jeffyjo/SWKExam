@@ -9,9 +9,15 @@ public class InterfaceAndGenericsMain implements InterfaceTest{
 
     //Implement interface and override methods
 
+
     public static void main(String[] args) {
 
-        //Show generics vs. non-generics
+        //test interface
+
+
+        //Show generics vs. non-generics how to swop two values
+
+
 
 
     }
